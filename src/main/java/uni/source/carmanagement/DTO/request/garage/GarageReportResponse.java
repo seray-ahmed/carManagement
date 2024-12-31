@@ -1,4 +1,4 @@
-package uni.source.carmanagement.DTO.request;
+package uni.source.carmanagement.DTO.request.garage;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package uni.source.carmanagement.DTO.response;
+package uni.source.carmanagement.DTO.response.garage;
 
 public class GarageResponse {
     private long id;

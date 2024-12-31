@@ -1,4 +1,4 @@
-package uni.source.carmanagement.DTO.request;
+package uni.source.carmanagement.DTO.request.garage;
 
 public class GarageRequest {
     private String name;

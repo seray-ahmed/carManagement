@@ -1,30 +1,20 @@
-package uni.source.carmanagement.DTO.response;
+package uni.source.carmanagement.DTO.request.car;
 
 import java.util.List;
 
-public class CarResponse {
-    private long id;
+public class CarUpdateRequest {
     private String make;
     private String model;
     private int productionYear;
     private String licensePlate;
-    private List<GarageResponse> garages;
+    private List<Long> garageIds;
 
-    public CarResponse(long id, String make, String model, int productionYear, String licensePlate, List<GarageResponse> garages) {
-        this.id = id;
+    public CarUpdateRequest(String make, String model, int productionYear, String licensePlate, List<Long> garageIds) {
         this.make = make;
         this.model = model;
         this.productionYear = productionYear;
         this.licensePlate = licensePlate;
-        this.garages = garages;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
+        this.garageIds = garageIds;
     }
 
     public String getMake() {
@@ -59,11 +49,11 @@ public class CarResponse {
         this.licensePlate = licensePlate;
     }
 
-    public List<GarageResponse> getGarages() {
-        return garages;
+    public List<Long> getGarageIds() {
+        return garageIds;
     }
 
-    public void setGarages(List<GarageResponse> garages) {
-        this.garages = garages;
+    public void setGarageIds(List<Long> garageIds) {
+        this.garageIds = garageIds;
     }
 }

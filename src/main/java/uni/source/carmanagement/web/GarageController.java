@@ -3,14 +3,16 @@ package uni.source.carmanagement.web;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import uni.source.carmanagement.DTO.request.GarageReportResponse;
-import uni.source.carmanagement.DTO.request.GarageRequest;
-import uni.source.carmanagement.DTO.response.GarageResponse;
+import uni.source.carmanagement.DTO.request.garage.GarageReportResponse;
+import uni.source.carmanagement.DTO.request.garage.GarageRequest;
+import uni.source.carmanagement.DTO.response.garage.GarageResponse;
 import uni.source.carmanagement.service.GarageService;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@RestController
+@RequestMapping("/garages")
 public class GarageController {
 
     private final GarageService garageService;

@@ -1,15 +1,15 @@
-package uni.source.carmanagement.DTO.request;
+package uni.source.carmanagement.DTO.request.car;
 
 import java.util.List;
 
-public class CarUpdateRequest {
+public class CarRequest {
     private String make;
     private String model;
     private int productionYear;
     private String licensePlate;
     private List<Long> garageIds;
 
-    public CarUpdateRequest(String make, String model, int productionYear, String licensePlate, List<Long> garageIds) {
+    public CarRequest(String make, String model, int productionYear, String licensePlate, List<Long> garageIds) {
         this.make = make;
         this.model = model;
         this.productionYear = productionYear;
