@@ -81,6 +81,11 @@ public class GarageServiceImpl implements GarageService {
     }
 
     @Override
+    public List<Garage> findSpecificGarages(List<Long> garageIds) {
+        return garageRepository.findAllByIdIn(garageIds);
+    }
+
+    @Override
     public List<GarageReportResponse> getCapacityReport(Long garageId, LocalDate startDate, LocalDate endDate) {
         Garage garage = garageRepository.findById(garageId)
                 .orElseThrow(() -> new RuntimeException("Garage not found"));
